@@ -9,7 +9,7 @@ import {
   Button,
   Paper,
 } from "@mui/material";
-import { ChangeEventHandler, useState } from "react";
+import { ChangeEventHandler, FormEventHandler, useState } from "react";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -18,13 +18,14 @@ export default function ContactUs() {
     message: "",
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    // Here, you would typically handle form submission, e.g., sending data to an API
     console.log("Form data submitted:", formData);
   };
 
