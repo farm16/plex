@@ -1,14 +1,11 @@
-"use client";
+import Hero from "./components/hero";
+import MobileOfficeVanFeatures from "./components/mobileOfficeVanFeatures";
 
-import { Button } from "@repo/ui";
-
-import styles from "../styles/index.module.css";
-
-export default function Web() {
+export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Web</h1>
-      <Button onClick={() => console.log("Pressed!")} text="Boop" />
-    </div>
+    <>
+      <Hero />
+      <MobileOfficeVanFeatures />
+    </>
   );
 }
