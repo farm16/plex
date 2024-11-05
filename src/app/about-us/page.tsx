@@ -42,12 +42,13 @@ export default function About() {
           </Grid>
           <Grid size={{ xs: 12 }}>
             <Typography variant="body1">
-              In today&apos;s fast-paced, connected world, standing out requires
-              more than just traditional marketing. Your customers are always on
-              the go—and that&apos;s where we come in. At Creative Coach
-              Solutions, we provide custom mobile marketing solutions designed
-              to reach audiences wherever they are, whenever they&apos;re ready
-              to engage.
+              In today’s fast-paced digital landscape, capturing attention
+              demands more than conventional strategies. Your audience is always
+              on the move—and that’s where Plex Marketing Solutions comes in. We
+              specialize in crafting tailored mobile marketing experiences that
+              connect with your customers wherever they are, whenever they're
+              ready to engage. With Plex, your brand travels with your audience,
+              making impressions that matter.
             </Typography>
           </Grid>
         </Grid>
@@ -59,12 +60,13 @@ export default function About() {
           Why Mobile Marketing?
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          As consumers spend more time on the go and connected to their devices,
-          brands must create experiences that captivate them where they are.
-          With mobile marketing, it&apos;s not just about showcasing a
-          product—it&apos;s about delivering a memorable, engaging journey. Let
-          your audience step inside your brand with a unique, interactive
-          experience on wheels.
+          As today’s consumers become increasingly mobile and connected, brands
+          need to meet them where they live—on the go. With Plex Marketing’s
+          mobile experiences, it’s not just about presenting a product; it’s
+          about crafting an unforgettable journey that captivates and engages.
+          Invite your audience to step inside your brand with a one-of-a-kind,
+          interactive experience on wheels, transforming every stop into a
+          memorable connection.
         </Typography>
       </Box>
 
@@ -74,11 +76,12 @@ export default function About() {
           Our Complete Solution
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          Creative Coach Solutions is a leader in mobile marketing innovation,
-          offering everything from state-of-the-art promotional vehicles to
-          personalized, on-the-road experiences. We&apos;re here to help you
-          build lasting connections with customers, elevate your brand, and
-          achieve your marketing goals—wherever the road takes you.
+          Plex Marketing is a leader in mobile marketing innovation, delivering
+          everything from cutting-edge promotional vehicles to fully customized,
+          on-the-road brand experiences. We drive impactful connections with
+          your customers, elevating your brand and bringing your marketing
+          vision to life—wherever the journey leads. With Plex, your brand is
+          always in motion, ready to captivate and inspire at every stop.
         </Typography>
       </Box>
 
@@ -88,13 +91,14 @@ export default function About() {
           Why Rent Instead of Buy?
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          Renting a mobile marketing vehicle can be a smart, cost-effective
-          choice for brands looking to reduce overhead and liability. Owning and
-          maintaining a specialized vehicle involves ongoing costs and
-          risks—from insurance and upkeep to unexpected repairs. With our rental
-          options, you gain access to top-tier promotional vehicles without the
-          long-term commitment or the hassle of ownership. Focus on what matters
-          most: connecting with your audience, while we handle the logistics.
+          Renting a mobile marketing vehicle with Plex Marketing is a savvy,
+          cost-effective solution for brands aiming to maximize impact without
+          the burdens of ownership. Owning and maintaining a specialized vehicle
+          involves ongoing expenses and risks—insurance, upkeep, and unexpected
+          repairs. With our rental options, you access high-quality promotional
+          vehicles minus the long-term commitment and logistical concerns. Focus
+          entirely on what truly matters: engaging your audience and growing
+          your brand, while we expertly manage the rest.
         </Typography>
       </Box>
 
