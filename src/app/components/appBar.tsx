@@ -48,13 +48,14 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container
-        maxWidth="xl"
+    <AppBar position="sticky" style={{ backgroundColor: "white" }}>
+      <div
+        // maxWidth="xl"
+
         style={{
           paddingTop: "10px",
           paddingBottom: "10px",
-          backgroundColor: "#f5f5f5",
+          backgroundColor: "rgba(246, 247, 250, 1)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -79,7 +80,7 @@ function ResponsiveAppBar() {
         >
           {"1-800-555-5555"}
         </Typography>
-      </Container>
+      </div>
       <Container
         maxWidth="xl"
         style={{

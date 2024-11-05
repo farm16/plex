@@ -12,6 +12,7 @@ export default function Home() {
       <Box
         sx={{
           backgroundImage: 'url("/city.jpg")',
+          backgroundSize: "cover",
         }}
         display="flex"
         alignItems="center"
