@@ -43,8 +43,9 @@ export default function Hero() {
             color="primary"
             sx={{ mr: 2 }}
             style={{
-              backgroundColor: "black",
               textTransform: "none",
+              backgroundColor: "#000000",
+              borderRadius: "30px",
             }}
           >
             Reserve yours
