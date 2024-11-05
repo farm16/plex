@@ -44,7 +44,6 @@ export default function Hero() {
             sx={{ mr: 2 }}
             style={{
               textTransform: "none",
-              backgroundColor: "#000000",
               borderRadius: "30px",
             }}
           >

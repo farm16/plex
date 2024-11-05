@@ -146,7 +146,6 @@ export const ContactUsForm = () => {
             borderRadius: "30px",
             width: "100%",
             textTransform: "none",
-            backgroundColor: "#000000",
           }}
         >
           Submit

@@ -108,7 +108,6 @@ export default function About() {
           variant="contained"
           size="large"
           sx={{
-            backgroundColor: "black",
             borderRadius: "30px",
             textTransform: "none",
             px: 4,

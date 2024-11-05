@@ -94,16 +94,54 @@ function ResponsiveAppBar() {
             height={60}
             onClick={() => router.push("/")}
           />
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            {pagesArray.map(({ label, path }, index) => (
+              <Button
+                key={index}
+                onClick={() => router.push(path)}
+                sx={{
+                  textTransform: "capitalize",
+                  mx: 3,
+                  color: "black",
+                  display: "block",
+                }}
+              >
+                {label ?? ""}
+              </Button>
+            ))}
+          </Box>
+          <Box
+            sx={{
+              marginLeft: "auto",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            <Button
+              variant="contained"
+              color="primary"
+              style={{
+                textTransform: "none",
+                borderRadius: "30px",
+              }}
+            >
+              Book Now
+            </Button>
+          </Box>
+          <Box
+            sx={{
+              marginLeft: "auto",
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="default"
+              color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon style={{ color: "black" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -128,23 +166,23 @@ function ResponsiveAppBar() {
                   </Typography>
                 </MenuItem>
               ))}
-            </Menu>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pagesArray.map(({ label, path }, index) => (
-              <Button
-                key={index}
-                onClick={() => router.push(path)}
-                sx={{
-                  textTransform: "capitalize",
-                  mx: 3,
-                  color: "black",
-                  display: "block",
+              <MenuItem
+                onClick={() => {
+                  router.push("/contact-us");
                 }}
               >
-                {label ?? ""}
-              </Button>
-            ))}
+                <Button
+                  variant="contained"
+                  color="primary"
+                  style={{
+                    textTransform: "none",
+                    borderRadius: "30px",
+                  }}
+                >
+                  Book Now
+                </Button>
+              </MenuItem>
+            </Menu>
           </Box>
         </Toolbar>
       </Container>

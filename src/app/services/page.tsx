@@ -106,7 +106,6 @@ export default function Services() {
                   px: 4,
                   fontWeight: 600,
                   textTransform: "none",
-                  backgroundColor: "#000000",
                   borderRadius: "30px",
                 }}
               >
@@ -148,7 +147,6 @@ export default function Services() {
             variant="contained"
             sx={{
               textTransform: "none",
-              backgroundColor: "#000000",
               borderRadius: "30px",
             }}
           >
