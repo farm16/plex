@@ -42,13 +42,13 @@ export default function About() {
           </Grid>
           <Grid size={{ xs: 12 }}>
             <Typography variant="body1">
-              In today's fast-paced digital landscape, capturing attention
+              In today&apos;s fast-paced digital landscape, capturing attention
               demands more than conventional strategies. Your audience is always
-              on the move—and that' s where Plex Marketing Solutions comes in.
-              We specialize in crafting tailored mobile marketing experiences
-              that connect with your customers wherever they are, whenever
-              they're ready to engage. With Plex, your brand travels with your
-              audience, making impressions that matter.
+              on the move—and that&apos; s where Plex Marketing Solutions comes
+              in. We specialize in crafting tailored mobile marketing
+              experiences that connect with your customers wherever they are,
+              whenever they&apos;re ready to engage. With Plex, your brand
+              travels with your audience, making impressions that matter.
             </Typography>
           </Grid>
         </Grid>
@@ -60,13 +60,13 @@ export default function About() {
           Why Mobile Marketing?
         </Typography>
         <Typography variant="body1" color="textSecondary">
-          As today's consumers become increasingly mobile and connected, brands
-          need to meet them where they live—on the go. With Plex Marketing's
-          mobile experiences, it's not just about presenting a product; it's
-          about crafting an unforgettable journey that captivates and engages.
-          Invite your audience to step inside your brand with a one-of-a-kind,
-          interactive experience on wheels, transforming every stop into a
-          memorable connection.
+          As today&apos;s consumers become increasingly mobile and connected,
+          brands need to meet them where they live—on the go. With Plex
+          Marketing&apos;s mobile experiences, it&apos;s not just about
+          presenting a product; it&apos;s about crafting an unforgettable
+          journey that captivates and engages. Invite your audience to step
+          inside your brand with a one-of-a-kind, interactive experience on
+          wheels, transforming every stop into a memorable connection.
         </Typography>
       </Box>
 
