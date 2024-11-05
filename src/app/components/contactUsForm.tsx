@@ -1,6 +1,6 @@
 "use client";
 
-import { TextField, Button, Paper, Select, MenuItem } from "@mui/material";
+import { TextField, Button, Select, MenuItem } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { useState } from "react";
 
@@ -31,12 +31,6 @@ export const ContactUsForm = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log("Form data submitted:", formData);
   };
 
   return (
