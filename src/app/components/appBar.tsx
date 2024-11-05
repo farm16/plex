@@ -32,6 +32,8 @@ const pages = {
   },
 };
 
+const pagesArray = Object.values(pages);
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
@@ -119,17 +121,19 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              {Object.values(pages).map(({ label, path }) => (
-                <MenuItem key={path} onClick={() => router.push(path)}>
-                  <Typography sx={{ textAlign: "center" }}>{label}</Typography>
+              {pagesArray.map(({ label, path }, index) => (
+                <MenuItem key={index} onClick={() => router.push(path)}>
+                  <Typography sx={{ textAlign: "center" }}>
+                    {label ?? ""}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {Object.values(pages).map(({ label, path }) => (
+            {pagesArray.map(({ label, path }, index) => (
               <Button
-                key={path}
+                key={index}
                 onClick={() => router.push(path)}
                 sx={{
                   textTransform: "capitalize",
@@ -138,7 +142,7 @@ function ResponsiveAppBar() {
                   display: "block",
                 }}
               >
-                {label}
+                {label ?? ""}
               </Button>
             ))}
           </Box>

@@ -1,6 +1,7 @@
 // components/MobileOfficeVanFeatures.js
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 const features = [
   {
@@ -42,7 +43,7 @@ const MobileOfficeVanFeatures = () => {
         </Typography>
         <Grid container spacing={4}>
           {features.map((feature, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid size={8} key={index}>
               <Box
                 sx={{
                   textAlign: "center",
@@ -52,9 +53,11 @@ const MobileOfficeVanFeatures = () => {
                 }}
               >
                 <Typography variant="h6" gutterBottom>
-                  {feature.title}
+                  {feature?.title ?? ""}
                 </Typography>
-                <Typography variant="body2">{feature.description}</Typography>
+                <Typography variant="body2">
+                  {feature?.description ?? ""}
+                </Typography>
               </Box>
             </Grid>
           ))}

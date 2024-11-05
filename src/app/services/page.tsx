@@ -50,8 +50,6 @@ export default function Services() {
             </CardContent>
           </Card>
         </Grid>
-
-        {/* Weekly Rental Card */}
         <Grid item xs={12} sm={4}>
           <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
             <CardContent>

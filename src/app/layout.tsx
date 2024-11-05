@@ -4,7 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme";
 import ResponsiveAppBar from "@/components/appBar";
-import Footer from "./components/footer";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
