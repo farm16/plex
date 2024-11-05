@@ -15,7 +15,7 @@ export default function Hero() {
       {/* background white background */}
       <Box
         maxWidth="md"
-        ml={3}
+        mx={3}
         style={{
           maxWidth: "30rem",
           backgroundColor: "rgba(255, 255, 255, 0.8)",

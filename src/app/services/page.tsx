@@ -3,12 +3,12 @@ import {
   Container,
   Typography,
   Box,
-  Grid,
   Card,
   CardContent,
   Button,
   Paper,
 } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import Link from "next/link";
 
 export default function Services() {
@@ -19,7 +19,7 @@ export default function Services() {
         <Typography
           variant="h2"
           gutterBottom
-          sx={{ fontWeight: 700, color: "#2C3E50" }}
+          sx={{ fontWeight: 700, color: "#000000" }}
         >
           Our Rental Services
         </Typography>
@@ -32,17 +32,40 @@ export default function Services() {
       {/* Pricing Cards */}
       <Grid container spacing={4}>
         {/* Daily Rental Card */}
-        <Grid item xs={12} sm={4}>
-          <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+        <Grid
+          size={{
+            xs: 12,
+            sm: 12,
+            md: 4,
+          }}
+        >
+          <Card
+            style={{
+              minHeight: 250,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "",
+            }}
+            sx={{ borderRadius: 3, boxShadow: 3 }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: 600, color: "#34495E", mb: 2 }}
+                sx={{ fontWeight: 600, color: "#000000", mb: 2 }}
               >
                 Daily Rental
               </Typography>
-              <Typography variant="h4" color="primary" sx={{ fontWeight: 700 }}>
-                $150 / day
+              <Typography variant="h4" sx={{ fontWeight: 700 }}>
+                $150/
+                <p
+                  style={{
+                    display: "inline",
+                    fontSize: "1.25rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  day
+                </p>
               </Typography>
               <Typography variant="body2" color="textSecondary" sx={{ mt: 2 }}>
                 Perfect for one-day events or special promotions.
@@ -50,17 +73,40 @@ export default function Services() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+        <Grid
+          size={{
+            xs: 12,
+            sm: 12,
+            md: 4,
+          }}
+        >
+          <Card
+            style={{
+              minHeight: 250,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "",
+            }}
+            sx={{ borderRadius: 3, boxShadow: 3 }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: 600, color: "#34495E", mb: 2 }}
+                sx={{ fontWeight: 600, color: "#000000", mb: 2 }}
               >
                 Weekly Rental
               </Typography>
-              <Typography variant="h4" color="primary" sx={{ fontWeight: 700 }}>
-                $900 / week
+              <Typography variant="h4" sx={{ fontWeight: 700 }}>
+                $900/
+                <p
+                  style={{
+                    display: "inline",
+                    fontSize: "1.25rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  week
+                </p>
               </Typography>
               <Typography variant="body2" color="textSecondary" sx={{ mt: 2 }}>
                 Ideal for week-long campaigns and events.
@@ -70,17 +116,40 @@ export default function Services() {
         </Grid>
 
         {/* Monthly Rental Card */}
-        <Grid item xs={12} sm={4}>
-          <Card sx={{ borderRadius: 3, boxShadow: 3 }}>
+        <Grid
+          size={{
+            xs: 12,
+            sm: 12,
+            md: 4,
+          }}
+        >
+          <Card
+            style={{
+              minHeight: 250,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "",
+            }}
+            sx={{ borderRadius: 3, boxShadow: 3 }}
+          >
             <CardContent>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: 600, color: "#34495E", mb: 2 }}
+                sx={{ fontWeight: 600, color: "#000000", mb: 2 }}
               >
                 Monthly Rental
               </Typography>
-              <Typography variant="h4" color="primary" sx={{ fontWeight: 700 }}>
-                $3,500 / month
+              <Typography variant="h4" sx={{ fontWeight: 700 }}>
+                $3,500/
+                <p
+                  style={{
+                    display: "inline",
+                    fontSize: "1.25rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  month
+                </p>
               </Typography>
               <Typography variant="body2" color="textSecondary" sx={{ mt: 2 }}>
                 Best for long-term promotions and sustained visibility.
@@ -97,7 +166,7 @@ export default function Services() {
       >
         <Typography
           variant="h5"
-          sx={{ fontWeight: 600, color: "#34495E", mb: 2 }}
+          sx={{ fontWeight: 600, color: "#000000", mb: 2 }}
         >
           Need More Flexibility?
         </Typography>
@@ -108,9 +177,11 @@ export default function Services() {
         <Link href="/contact" passHref>
           <Button
             variant="contained"
-            color="primary"
-            size="large"
-            sx={{ borderRadius: "30px" }}
+            sx={{
+              textTransform: "none",
+              backgroundColor: "#000000",
+              borderRadius: "30px",
+            }}
           >
             Contact Us
           </Button>
