@@ -32,10 +32,10 @@ export default function ContactUs() {
               Sales
             </Typography>
             <Typography variant="body1">
-              <Link href="tel:555-555-5555">555-555-5555</Link>
+              <Link href="tel:13474337602">1(347) 433-7602</Link>
             </Typography>
             <Typography variant="body1">
-              <Link href="mailto:sales@plexmktg.com">sales@plexmktg.com</Link>
+              <Link href="mailto:sales@plexvans.com">sales@plexvans.com</Link>
             </Typography>
             <Alert
               icon={<AlertIcon fontSize="inherit" />}

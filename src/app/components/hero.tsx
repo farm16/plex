@@ -1,6 +1,10 @@
+"use client";
+
 import { Box, Button, Container, Link, Typography } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
   return (
     <Box
       height={{
@@ -53,6 +57,7 @@ export default function Hero() {
             <Button
               variant="contained"
               color="primary"
+              onClick={() => router.push("/contact-us")}
               sx={{ mr: 2 }}
               style={{
                 textTransform: "none",
@@ -62,7 +67,7 @@ export default function Hero() {
               Reserve yours
             </Button>
             <Link
-              href="#why-choose-us"
+              onClick={() => router.push("/about-us")}
               underline="hover"
               sx={{ color: "primary.main" }}
             >

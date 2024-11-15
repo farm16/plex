@@ -30,10 +30,10 @@ const pages = {
     path: "/faq",
     label: "FAQ",
   },
-  contact: {
-    path: "/contact-us",
-    label: "Get in Touch",
-  },
+  // contact: {
+  //   path: "/contact-us",
+  //   label: "Get in Touch",
+  // },
 };
 
 const pagesArray = Object.values(pages);
@@ -55,8 +55,6 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="sticky" style={{ backgroundColor: "white" }}>
       <div
-        // maxWidth="xl"
-
         style={{
           paddingTop: "10px",
           paddingBottom: "10px",
@@ -126,13 +124,14 @@ function ResponsiveAppBar() {
           </Box>
           <Box
             sx={{
-              marginLeft: "auto",
+              ml: 3,
               display: { xs: "none", md: "flex" },
             }}
           >
             <Button
               variant="contained"
               color="primary"
+              onClick={() => router.push("/contact-us")}
               style={{
                 textTransform: "none",
                 borderRadius: "30px",

@@ -1,7 +1,6 @@
-// components/Footer.js
 import React from "react";
 import { Box, Container, Typography, Link, Grid } from "@mui/material";
-import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
+import { Facebook, Instagram } from "@mui/icons-material";
 
 const Footer = () => {
   return (
@@ -33,13 +32,6 @@ const Footer = () => {
             >
               Services
             </Link>
-            <Link
-              color="inherit"
-              href="/contact"
-              sx={{ display: "block", mb: 1 }}
-            >
-              Contact
-            </Link>
             <Link color="inherit" href="/faq" sx={{ display: "block", mb: 1 }}>
               FAQ
             </Link>
@@ -48,24 +40,12 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               Connect
             </Typography>
-            <Link color="inherit" href="/blog" sx={{ display: "block", mb: 1 }}>
-              Blog
-            </Link>
-            <Link color="inherit" href="/news" sx={{ display: "block", mb: 1 }}>
-              News
-            </Link>
             <Box sx={{ display: "flex", mt: 1 }}>
               <Link color="inherit" href="#" sx={{ mr: 2 }}>
                 <Facebook />
               </Link>
               <Link color="inherit" href="#" sx={{ mr: 2 }}>
                 <Instagram />
-              </Link>
-              <Link color="inherit" href="#" sx={{ mr: 2 }}>
-                <Twitter />
-              </Link>
-              <Link color="inherit" href="#">
-                <YouTube />
               </Link>
             </Box>
           </Grid>
@@ -77,20 +57,20 @@ const Footer = () => {
               1234 Van Life St, Suite 100
             </Typography>
             <Typography variant="body2" gutterBottom>
-              City, State 12345
+              New York, NY 10001
             </Typography>
             <Typography variant="body2" gutterBottom>
-              Email: info@loftvans.com
+              Email: info@plexvans.com
             </Typography>
             <Typography variant="body2" gutterBottom>
-              Phone: (123) 456-7890
+              Phone: (347) 433-7602
             </Typography>
           </Grid>
         </Grid>
         <Box sx={{ mt: 5, textAlign: "center" }}>
           <Typography variant="body2" color="inherit">
             {"© "}
-            {new Date().getFullYear()} Loft Vans. All rights reserved.
+            {new Date().getFullYear()} Plex Vans. All rights reserved.
           </Typography>
         </Box>
       </Container>
