@@ -4,15 +4,14 @@ export default function Hero() {
   return (
     <Box
       height={{
-        xs: "calc(70vh - 64px)",
-        sm: "calc(70vh - 64px)",
-        md: "calc(70vh - 64px)",
-        lg: "calc(70vh - 64px)",
+        xs: "calc(75vh - 64px)",
+        sm: "calc(75vh - 64px)",
+        md: "calc(75vh - 64px)",
+        lg: "calc(75vh - 64px)",
       }}
       sx={{
         backgroundImage: 'url("/hero.jpg")',
         backgroundSize: "cover",
-
         backgroundPosition: "center",
         display: "flex",
         alignItems: "center",
@@ -62,8 +61,12 @@ export default function Hero() {
             >
               Reserve yours
             </Button>
-            <Link href="#" underline="hover" sx={{ color: "primary.main" }}>
-              Download overview
+            <Link
+              href="#why-choose-us"
+              underline="hover"
+              sx={{ color: "primary.main" }}
+            >
+              Learn more
             </Link>
           </Box>
         </Box>

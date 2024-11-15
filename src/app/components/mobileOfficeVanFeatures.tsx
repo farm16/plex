@@ -50,12 +50,21 @@ const features = [
 
 const MobileOfficeVanFeatures = () => {
   return (
-    <Box sx={{ bgcolor: "#ffff", py: 6 }}>
+    <Box sx={{ bgcolor: "#ffff", py: 6, mb: 6 }}>
       <Container maxWidth="lg">
-        <Typography variant="h3" align="center" gutterBottom>
-          Mobile Office Van Features
+        <Typography variant="h4" align="center" gutterBottom>
+          Explore Our Van Features
         </Typography>
-        <Grid container spacing={4}>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="text.secondary"
+          paragraph
+        >
+          Discover the features that make our mobile office vans the perfect
+          workspace on wheels.
+        </Typography>
+        <Grid container spacing={4} sx={{ mt: 4 }}>
           {features.map((feature, index) => (
             <Grid
               size={{
@@ -67,7 +76,6 @@ const MobileOfficeVanFeatures = () => {
             >
               <Box
                 sx={{
-                  // textAlign: "center",
                   p: 3,
                   backgroundColor: "rgba(246, 247, 250, 1)",
                   borderRadius: 2,

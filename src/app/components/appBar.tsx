@@ -1,34 +1,38 @@
 "use client";
+
 import React, { MouseEvent, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { Drawer, List, ListItem, ListItemButton } from "@mui/material";
 
 const pages = {
-  home: {
-    path: "/",
-    label: "Home",
-  },
+  // home: {
+  //   path: "/",
+  //   label: "Home",
+  // },
   about: {
     path: "/about-us",
-    label: "About",
+    label: "About Us",
   },
   services: {
     path: "/services",
     label: "Services",
   },
+  faq: {
+    path: "/faq",
+    label: "FAQ",
+  },
   contact: {
     path: "/contact-us",
-    label: "Contact Us",
+    label: "Get in Touch",
   },
 };
 
@@ -38,6 +42,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -78,7 +83,7 @@ function ResponsiveAppBar() {
             fontWeight: "700",
           }}
         >
-          {"1-800-555-5555"}
+          {"1(347) 433-7602"}
         </Typography>
       </div>
       <Container
@@ -87,15 +92,21 @@ function ResponsiveAppBar() {
           backgroundColor: "white",
         }}
       >
-        <Toolbar disableGutters>
+        <Toolbar>
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="logo"
-            width={80}
-            height={60}
+            width={85}
+            height={27}
             onClick={() => router.push("/")}
           />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
             {pagesArray.map(({ label, path }, index) => (
               <Button
                 key={index}
@@ -105,6 +116,8 @@ function ResponsiveAppBar() {
                   mx: 3,
                   color: "black",
                   display: "block",
+                  textDecoration: pathname === path ? "underline" : "",
+                  fontWeight: pathname === path ? "700" : "",
                 }}
               >
                 {label ?? ""}
@@ -144,46 +157,48 @@ function ResponsiveAppBar() {
             >
               <MenuIcon style={{ color: "black" }} />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
+            <Drawer
+              anchor={"top"}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
             >
-              {pagesArray.map(({ label, path }, index) => (
-                <MenuItem key={index} onClick={() => router.push(path)}>
-                  <Typography sx={{ textAlign: "center" }}>
-                    {label ?? ""}
-                  </Typography>
-                </MenuItem>
-              ))}
-              <MenuItem
-                onClick={() => {
-                  router.push("/contact-us");
-                }}
-              >
-                <Button
-                  variant="contained"
-                  color="primary"
-                  style={{
-                    textTransform: "none",
-                    borderRadius: "30px",
+              <List>
+                {pagesArray.map(({ label, path }, index) => (
+                  <ListItem key={index}>
+                    <ListItemButton
+                      onClick={() => {
+                        router.push(path);
+                        handleCloseNavMenu();
+                      }}
+                    >
+                      <Typography sx={{ textAlign: "center" }}>
+                        {label ?? ""}
+                      </Typography>
+                    </ListItemButton>
+                  </ListItem>
+                ))}
+              </List>
+              <List>
+                <ListItem
+                  style={{ display: "flex", justifyContent: "center" }}
+                  onClick={() => {
+                    router.push("/contact-us");
+                    handleCloseNavMenu();
                   }}
                 >
-                  Book Now
-                </Button>
-              </MenuItem>
-            </Menu>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    style={{
+                      textTransform: "none",
+                      borderRadius: "30px",
+                    }}
+                  >
+                    Book Now
+                  </Button>
+                </ListItem>
+              </List>
+            </Drawer>
           </Box>
         </Toolbar>
       </Container>
