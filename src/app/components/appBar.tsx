@@ -64,8 +64,8 @@ function ResponsiveAppBar() {
           <Image
             src="/logo.png"
             alt="logo"
-            width={85}
-            height={27}
+            width={120}
+            height={45}
             onClick={() => router.push("/")}
           />
           <Box
