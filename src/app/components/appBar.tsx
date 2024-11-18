@@ -54,36 +54,6 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="sticky" style={{ backgroundColor: "white" }}>
-      <div
-        style={{
-          paddingTop: "10px",
-          paddingBottom: "10px",
-          backgroundColor: "rgba(246, 247, 250, 1)",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Typography
-          variant="body2"
-          style={{
-            color: "rgba(101,106,111,1)",
-            marginRight: "7px",
-          }}
-        >
-          {"Reserve or learn more at"}
-        </Typography>
-        <Typography
-          variant="body2"
-          style={{
-            color: "rgba(101,106,111,1)",
-            textDecoration: "underline",
-            fontWeight: "700",
-          }}
-        >
-          {"1(347) 433-7602"}
-        </Typography>
-      </div>
       <Container
         maxWidth="xl"
         style={{

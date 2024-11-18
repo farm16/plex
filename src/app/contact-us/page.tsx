@@ -29,13 +29,10 @@ export default function ContactUs() {
             </Typography>
 
             <Typography fontWeight={500} variant="body1">
-              Sales
+              Email us at:
             </Typography>
             <Typography variant="body1">
-              <Link href="tel:13474337602">1(347) 433-7602</Link>
-            </Typography>
-            <Typography variant="body1">
-              <Link href="mailto:sales@plexvans.com">sales@plexvans.com</Link>
+              <Link href="mailto:info@plexvans.com">info@plexvans.com</Link>
             </Typography>
             <Alert
               icon={<AlertIcon fontSize="inherit" />}

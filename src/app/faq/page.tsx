@@ -45,7 +45,7 @@ export default function FAQ() {
     {
       question: "Can I customize the inside of the vehicle?",
       answer:
-        "Absolutely! We provide full customization options to ensure the vehicle aligns with your branding. From interior layouts to promotional displays, we ensure your vehicle provides a fully branded experience for your customers.",
+        "No, currently we do not offer customization of the interior of the vehicle. However, we provide a range of vehicles with different features and layouts to suit your campaign needs.",
     },
     {
       question: "How do I ensure the safety of my team and equipment?",
@@ -55,7 +55,7 @@ export default function FAQ() {
     {
       question: "Do you offer nationwide service?",
       answer:
-        "Yes, we offer nationwide coverage. Whether you're running a campaign in one city or multiple locations across the country, we can support you with our fleet of vehicles and expert logistics management.",
+        "No, we currently offer our services in select regions such as New York City. However, we are expanding our reach and may be able to accommodate your location. Contact us to discuss your needs and location.",
     },
     {
       question: "How do I get started?",

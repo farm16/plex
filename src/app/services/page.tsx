@@ -1,4 +1,5 @@
-// pages/services.js
+"use client";
+
 import {
   Container,
   Typography,
@@ -10,32 +11,36 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const rentalOptions = [
   {
     title: "Daily Rental",
-    price: "$150",
+    price: "$385",
     duration: "day",
     description:
       "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment.",
   },
-  {
-    title: "Weekly Rental",
-    price: "$900",
-    duration: "week",
-    description:
-      "An excellent choice for week-long campaigns and events, providing flexibility and extended brand presence to engage your audience.",
-  },
+  // {
+  //   title: "Weekly Rental",
+  //   price: "$900",
+  //   duration: "week",
+  //   description:
+  //     "An excellent choice for week-long campaigns and events, providing flexibility and extended brand presence to engage your audience.",
+  // },
   {
     title: "Monthly Rental",
-    price: "$3,500",
-    duration: "month",
+    price: "$350",
+    warning: "3 months min requirement",
+    duration: "day",
     description:
       "Ideal for sustained, impactful marketing efforts, allowing your brand to build lasting impressions over an entire month with continuous visibility.",
   },
 ];
 
 export default function Services() {
+  const router = useRouter();
+
   return (
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
       {/* Header Section */}
@@ -54,7 +59,15 @@ export default function Services() {
       </Box>
 
       {/* Pricing Cards */}
-      <Grid container spacing={4}>
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          display: "flex",
+          justifyContent: "center", // Center horizontally
+          alignItems: "center", // Center vertically
+        }}
+      >
         {rentalOptions.map((option, index) => (
           <Grid size={{ xs: 12, sm: 4 }} key={index}>
             <Card
@@ -62,7 +75,7 @@ export default function Services() {
                 minHeight: 300,
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
+                justifyContent: "center", // Center vertically
                 alignItems: "center",
                 textAlign: "center",
                 borderRadius: 3,
@@ -89,6 +102,11 @@ export default function Services() {
                   >
                     /{option.duration}
                   </Typography>
+                  {option.warning && (
+                    <Typography variant="body2" color="error">
+                      {option.warning}
+                    </Typography>
+                  )}
                 </Typography>
                 <Typography
                   variant="body2"
@@ -101,6 +119,7 @@ export default function Services() {
               <Button
                 variant="contained"
                 color="primary"
+                onClick={() => router.push("/contact-us")}
                 sx={{
                   mb: 2,
                   px: 4,
@@ -142,17 +161,16 @@ export default function Services() {
           Contact us for custom rental options for extended campaigns or
           specific requirements.
         </Typography>
-        <Link href="/contact" passHref>
-          <Button
-            variant="contained"
-            sx={{
-              textTransform: "none",
-              borderRadius: "30px",
-            }}
-          >
-            Contact Us
-          </Button>
-        </Link>
+        <Button
+          variant="contained"
+          onClick={() => router.push("/contact-us")}
+          sx={{
+            textTransform: "none",
+            borderRadius: "30px",
+          }}
+        >
+          Contact Us
+        </Button>
       </Paper>
     </Container>
   );

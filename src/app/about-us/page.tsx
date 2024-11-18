@@ -1,7 +1,12 @@
+"use client";
+
 import { Container, Typography, Box, Button, Paper } from "@mui/material";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function About() {
+  const router = useRouter();
+
   return (
     <Container maxWidth="lg" sx={{ mt: 5, mb: 10 }}>
       {/* Header Section */}
@@ -117,6 +122,7 @@ export default function About() {
       {/* Call to Action */}
       <Box textAlign="center" sx={{ mt: 10 }}>
         <Button
+          onClick={() => router.push("/contact-us")}
           variant="contained"
           size="large"
           sx={{

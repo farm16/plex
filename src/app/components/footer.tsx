@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import { Box, Container, Typography, Link, Grid } from "@mui/material";
 import { Facebook, Instagram } from "@mui/icons-material";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <Box
       component="footer"
@@ -20,25 +24,29 @@ const Footer = () => {
             </Typography>
             <Link
               color="inherit"
-              href="/about"
+              onClick={() => router.push("/about-us")}
               sx={{ display: "block", mb: 1 }}
             >
               About Us
             </Link>
             <Link
               color="inherit"
-              href="/services"
+              onClick={() => router.push("/services")}
               sx={{ display: "block", mb: 1 }}
             >
               Services
             </Link>
-            <Link color="inherit" href="/faq" sx={{ display: "block", mb: 1 }}>
+            <Link
+              color="inherit"
+              onClick={() => router.push("/faq")}
+              sx={{ display: "block", mb: 1 }}
+            >
               FAQ
             </Link>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" gutterBottom>
-              Connect
+              Coming soon
             </Typography>
             <Box sx={{ display: "flex", mt: 1 }}>
               <Link color="inherit" href="#" sx={{ mr: 2 }}>
@@ -54,16 +62,13 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography variant="body2" gutterBottom>
-              1234 Van Life St, Suite 100
+              235 Starr St.
             </Typography>
             <Typography variant="body2" gutterBottom>
-              New York, NY 10001
+              Brooklyn, NY 11237
             </Typography>
             <Typography variant="body2" gutterBottom>
               Email: info@plexvans.com
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              Phone: (347) 433-7602
             </Typography>
           </Grid>
         </Grid>
