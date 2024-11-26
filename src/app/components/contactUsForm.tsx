@@ -3,6 +3,41 @@
 import { TextField, Button, Select, MenuItem } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { useState } from "react";
+import { sendMail as sendEmailLib } from "@/lib/send-mail";
+
+export function useSendMail() {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const sendMail = async (data: {
+    subject: string;
+    text: string;
+    html?: string;
+  }) => {
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
+    try {
+      const emailResponse = await sendEmailLib(data);
+      console.log("Email response", emailResponse);
+      if (emailResponse?.accepted) {
+        setSuccess(true);
+        console.log("Email sent successfully");
+      } else {
+        setError("Error sending email");
+        console.log("Error sending email");
+      }
+    } catch (error) {
+      console.log("Error sending email", error);
+      setError("Error sending email");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return { sendMail, loading, error, success };
+}
 
 const descriptionSelections = [
   "Remote worker",
@@ -27,11 +62,26 @@ export const ContactUsForm = () => {
     descriptionSelection: "",
     message: "",
   });
+  const { sendMail, loading, success, error } = useSendMail();
+
+  console.log(loading, error);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  if (success) {
+    return <div>Success!</div>;
+  }
 
   return (
     <Grid container spacing={2}>
@@ -146,6 +196,12 @@ export const ContactUsForm = () => {
             borderRadius: "30px",
             width: "100%",
             textTransform: "none",
+          }}
+          onClick={() => {
+            sendMail({
+              subject: "Contact Us Form Submission",
+              text: JSON.stringify(formData, null, 2),
+            });
           }}
         >
           Submit
