@@ -1,0 +1,236 @@
+{
+  "components": {
+    "hero": {
+      "title": "Fast, Flexible Event Vehicle Solutions",
+      "description": "Simple, spacious mobile office van conversions that help you do your best work, anywhere.",
+      "button": {
+        "text": "Reserve yours"
+      },
+      "link": {
+        "text": "Learn more"
+      }
+    },
+    "contactUs": {
+      "name": "Name",
+      "email": "Email",
+      "companyName": "Company Name",
+      "phone": "Phone Number",
+      "descriptionPrompt": "Which best describes you?",
+      "message": "Message",
+      "submit": "Submit",
+      "loading": "Loading...",
+      "error": "Something went wrong",
+      "success": "Success!",
+      "descriptions": {
+        "Remote worker": "Remote worker",
+        "Nonprofit": "Nonprofit",
+        "Real estate agent": "Real estate agent",
+        "Personal trainer": "Personal trainer",
+        "Legal service": "Legal service",
+        "General contractor": "General contractor",
+        "Financial services": "Financial services",
+        "Photographer": "Photographer",
+        "Interior designer": "Interior designer",
+        "Event planner": "Event planner",
+        "B2B Sales & HR": "B2B Sales & HR"
+      }
+    },
+    "footer": {
+      "companyTitle": "Company",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "faq": "FAQ",
+      "comingSoon": "Coming soon",
+      "contactTitle": "Contact Us",
+      "address": {
+        "line1": "235 Starr St.",
+        "line2": "Brooklyn, NY 11237"
+      },
+      "email": "Email: info@plexvans.com",
+      "rights": "All rights reserved."
+    },
+    "landingContactUs": {
+      "title": "Work, anywhere",
+      "subtitle": "Connect with a member of our team to learn more about our mobile office van conversions, process, and available build spots."
+    },
+    "mobileOfficeVanFeatures": {
+      "heading": "Explore Our Van Features",
+      "subheading": "Discover the features that make our mobile office vans the perfect workspace on wheels.",
+      "features": {
+        "ergonomicWorkspace": {
+          "title": "Ergonomic Workspace",
+          "description": "Designed for comfort and efficiency, ensuring optimal productivity."
+        },
+        "highSpeedInternet": {
+          "title": "High-Speed Internet",
+          "description": "Stay connected with reliable high-speed internet access."
+        },
+        "powerSupply": {
+          "title": "Power Supply",
+          "description": "Equipped with solar panels and backup generators for uninterrupted power."
+        },
+        "comfortableSeating": {
+          "title": "Comfortable Seating",
+          "description": "Spacious seating designed for long hours on the road."
+        },
+        "storageSolutions": {
+          "title": "Storage Solutions",
+          "description": "Ample storage space for all your office supplies and equipment."
+        },
+        "climateControl": {
+          "title": "Climate Control",
+          "description": "Maintain the perfect temperature with efficient heating and cooling systems."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "heading": "Why Choose Our Mobile Office Vans?",
+      "subheading": "With Plex Vans, you can enjoy a range of benefits that make your business more efficient, accessible, and eco-friendly.",
+      "features": {
+        "avoidParkingViolations": {
+          "title": "Avoid Parking Violations",
+          "description": "Our mobile office vans are designed to comply with local regulations, helping you avoid costly parking tickets and fines."
+        },
+        "fullyInsuredVehicle": {
+          "title": "Fully Insured Vehicle",
+          "description": "Comprehensive insurance coverage protects your business by minimizing risks, giving you peace of mind with every trip."
+        },
+        "increasedMobility": {
+          "title": "Increased Mobility",
+          "description": "Access more customers by taking your services directly to high-traffic areas or underserved locations."
+        },
+        "realTimeTracking": {
+          "title": "Real-Time Vehicle Location Tracking",
+          "description": "Monitor van locations in real-time to optimize route planning, reduce fuel costs, and enhance service efficiency. Keep customers informed and improve logistics management for your business."
+        },
+        "costEffective": {
+          "title": "Cost-Effective Solution",
+          "description": "Eliminate the need for brick-and-mortar setups while maintaining a high level of service and accessibility."
+        },
+        "convenienceOnTheGo": {
+          "title": "Convenience on the Go",
+          "description": "Our vans offer a fully-equipped, flexible workspace, allowing you to bring services directly to customers."
+        },
+        "ecoFriendly": {
+          "title": "Eco-Friendly Design",
+          "description": "Our vans are equipped with sustainable features, reducing your environmental footprint while delivering top-notch services."
+        },
+        "customizableInteriors": {
+          "title": "Customizable Interiors",
+          "description": "Tailor the van's interior to suit your business requirements, ensuring a functional and professional workspace."
+        }
+      }
+    },
+    "responsiveAppBar": {
+      "pages": {
+        "about": "About Us",
+        "services": "Services",
+        "faq": "FAQ"
+      },
+      "bookNow": "Book Now"
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "subheading": "Everything you need to know about Plex Marketing Solutions and our mobile marketing services.",
+      "sidebarTitle": "More Information",
+      "sidebarText": "Here, you will find additional details to help you understand our offerings.",
+      "q1": {
+        "question": "What is Plex Marketing Solutions?",
+        "answer": "Plex Marketing Solutions is a leader in mobile marketing innovation, specializing in creating tailored, on-the-go brand experiences for modern businesses."
+      },
+      "q2": {
+        "question": "Why is mobile marketing so effective?",
+        "answer": "Mobile marketing reaches your audience where they spend most of their time: on the go. By utilizing promotional vehicles and interactive brand experiences, we create memorable and engaging moments that drive results and brand loyalty."
+      },
+      "q3": {
+        "question": "What kind of vehicles do you offer?",
+        "answer": "We offer a range of custom promotional vehicles, from high-tech vans to fully equipped mobile showrooms, designed to fit your brand's specific needs and campaign goals."
+      },
+      "q4": {
+        "question": "Is mobile marketing rental a good option for my business?",
+        "answer": "Yes! Renting a mobile marketing vehicle with Plex is a cost-effective solution. It allows you to access high-quality, fully insured vehicles without the ongoing costs and responsibilities of ownership."
+      },
+      "q5": {
+        "question": "How do I rent a promotional vehicle?",
+        "answer": "Simply reach out to our team through the contact page, and we'll work with you to select the perfect vehicle for your needs, customize it for your brand, and set up a schedule for your campaign."
+      },
+      "q6": {
+        "question": "How much does renting a promotional vehicle cost?",
+        "answer": "The cost of renting a vehicle depends on the duration of the campaign, the type of vehicle, and any customizations required."
+      },
+      "q7": {
+        "question": "Can I customize the inside of the vehicle?",
+        "answer": "No, currently we do not offer customization of the interior of the vehicle."
+      },
+      "q8": {
+        "question": "How do I ensure the safety of my team and equipment?",
+        "answer": "Our vehicles are fully insured, reducing the risk to your business. We also follow strict maintenance schedules to ensure everything runs smoothly."
+      },
+      "q9": {
+        "question": "Do you offer nationwide service?",
+        "answer": "No, we currently offer our services in select regions such as New York City. However, we are expanding our reach."
+      },
+      "q10": {
+        "question": "How do I get started?",
+        "answer": "Getting started is simple. Reach out to our team through the contact page, and we'll walk you through the process."
+      }
+    },
+    "contactUsPage": {
+      "title": "Ready to get on the road?",
+      "subtitle": "Connect with a member of our team to learn more about our mobile office van conversions, process, and available build spots.",
+      "emailPrompt": "Email us at:",
+      "email": "info@plexvans.com",
+      "alert": "Please note that we are not able to offer mobile office conversions for residents outside of the United States."
+    },
+    "about": {
+      "header": {
+        "title": "Drive Your Brand Forward",
+        "subtitle": "Comprehensive Mobile Marketing Solutions for Modern Brands"
+      },
+      "intro": {
+        "imageAlt": "Mobile Office Van",
+        "text": "In today’s fast-paced digital landscape, capturing attention demands more than conventional strategies. Your audience is always on the move—and that’s where Plex Marketing Solutions comes in. We specialize in crafting tailored mobile marketing experiences that connect with your customers wherever they are, whenever they’re ready to engage. With Plex, your brand travels with your audience, making impressions that matter."
+      },
+      "whyMobileMarketing": {
+        "title": "Why Mobile Marketing?",
+        "text": "Today’s consumers are increasingly mobile and connected, so brands need to meet them where they live—on the go. Plex Marketing’s mobile experiences go beyond presenting a product; they create memorable, interactive journeys that captivate and engage. With our services, every stop becomes a valuable connection point."
+      },
+      "ourSolution": {
+        "title": "Our Complete Solution",
+        "text": "Plex Marketing is a leader in mobile marketing innovation, providing everything from cutting-edge promotional vehicles to fully customized brand experiences on the road. We bring your marketing vision to life, connecting with customers and elevating your brand every step of the journey."
+      },
+      "rentingBenefits": {
+        "title": "Why Rent Instead of Buy?",
+        "text": "Renting with Plex Marketing offers a cost-effective solution for maximizing impact without ownership hassles. Avoid the costs of insurance, upkeep, and repairs while focusing on what truly matters: engaging your audience and growing your brand. Let us handle the logistics while you drive results."
+      },
+      "ctaButton": "Contact Our Team"
+    },
+    "services": {
+      "header": {
+        "title": "Our Rental Services",
+        "subtitle": "Choose from flexible rental options tailored to meet your promotional needs, whether it’s a day, a week, or a month."
+      },
+      "ctaButton": "Book Now",
+      "customRentalInquiry": {
+        "title": "Need More Flexibility?",
+        "text": "Contact us for custom rental options for extended campaigns or specific requirements.",
+        "button": "Contact Us"
+      },
+      "rentalOptions": {
+        "dailyRental": {
+          "title": "Daily Rental",
+          "price": "$385",
+          "duration": "day",
+          "description": "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment."
+        },
+        "monthlyRental": {
+          "title": "Monthly Rental",
+          "price": "$350",
+          "duration": "month",
+          "warning": "3 months min requirement",
+          "description": "Ideal for sustained, impactful marketing efforts, allowing your brand to build lasting impressions over an entire month with continuous visibility."
+        }
+      }
+    }
+  }
+}

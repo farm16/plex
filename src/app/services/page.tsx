@@ -9,36 +9,30 @@ import {
   Button,
   Paper,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { useRouter } from "next/navigation";
-
-const rentalOptions = [
-  {
-    title: "Daily Rental",
-    price: "$385",
-    duration: "day",
-    description:
-      "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment.",
-  },
-  // {
-  //   title: "Weekly Rental",
-  //   price: "$900",
-  //   duration: "week",
-  //   description:
-  //     "An excellent choice for week-long campaigns and events, providing flexibility and extended brand presence to engage your audience.",
-  // },
-  {
-    title: "Monthly Rental",
-    price: "$350",
-    warning: "3 months min requirement",
-    duration: "day",
-    description:
-      "Ideal for sustained, impactful marketing efforts, allowing your brand to build lasting impressions over an entire month with continuous visibility.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Services() {
+  const t = useTranslations("components.services");
   const router = useRouter();
+
+  // Retrieve the rental options from the translations
+  const rentalOptions = [
+    {
+      title: t("rentalOptions.dailyRental.title"),
+      price: t("rentalOptions.dailyRental.price"),
+      duration: t("rentalOptions.dailyRental.duration"),
+      description: t("rentalOptions.dailyRental.description"),
+    },
+    {
+      title: t("rentalOptions.monthlyRental.title"),
+      price: t("rentalOptions.monthlyRental.price"),
+      duration: t("rentalOptions.monthlyRental.duration"),
+      warning: t("rentalOptions.monthlyRental.warning"),
+      description: t("rentalOptions.monthlyRental.description"),
+    },
+  ];
 
   return (
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
@@ -49,11 +43,10 @@ export default function Services() {
           gutterBottom
           sx={{ fontWeight: 700, color: "#000000" }}
         >
-          Our Rental Services
+          {t("header.title")}
         </Typography>
         <Typography variant="body1" color="textSecondary" paragraph>
-          Choose from flexible rental options tailored to meet your promotional
-          needs, whether it’s a day, a week, or a month.
+          {t("header.subtitle")}
         </Typography>
       </Box>
 
@@ -127,7 +120,7 @@ export default function Services() {
                   borderRadius: "30px",
                 }}
               >
-                Book Now
+                {t("ctaButton")}
               </Button>
             </Card>
           </Grid>
@@ -154,11 +147,10 @@ export default function Services() {
           variant="h5"
           sx={{ fontWeight: 600, color: "#000000", mb: 2 }}
         >
-          Need More Flexibility?
+          {t("customRentalInquiry.title")}
         </Typography>
         <Typography variant="body1" color="textSecondary" paragraph>
-          Contact us for custom rental options for extended campaigns or
-          specific requirements.
+          {t("customRentalInquiry.text")}
         </Typography>
         <Button
           variant="contained"
@@ -168,7 +160,7 @@ export default function Services() {
             borderRadius: "30px",
           }}
         >
-          Contact Us
+          {t("customRentalInquiry.button")}
         </Button>
       </Paper>
     </Container>

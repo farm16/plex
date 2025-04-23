@@ -5,6 +5,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme";
 import ResponsiveAppBar from "@/components/appBar";
 import Footer from "@/components/footer";
+import { getLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -23,13 +25,15 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         {/* Additional SEO Tags */}
         <meta charSet="UTF-8" />
@@ -50,14 +54,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <ResponsiveAppBar />
-            {children}
-            <Footer />
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <NextIntlClientProvider>
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              <ResponsiveAppBar />
+              {children}
+              <Footer />
+            </ThemeProvider>
+          </AppRouterCacheProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

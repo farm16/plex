@@ -1,10 +1,13 @@
 "use client";
 
 import { Box, Button, Container, Link, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
   const router = useRouter();
+  const t = useTranslations("components.hero");
+
   return (
     <Box
       height={{
@@ -47,11 +50,10 @@ export default function Hero() {
               mb: 2,
             }}
           >
-            Fast, Flexible Event Vehicle Solutions
+            {t("title")}
           </Typography>
           <Typography variant="body1" sx={{ mb: 4, maxWidth: "400px" }}>
-            Simple, spacious mobile office van conversions that help you do your
-            best work, anywhere.
+            {t("description")}
           </Typography>
           <Box>
             <Button
@@ -64,14 +66,14 @@ export default function Hero() {
                 borderRadius: "30px",
               }}
             >
-              Reserve yours
+              {t("button.text")}
             </Button>
             <Link
               onClick={() => router.push("/about-us")}
               underline="hover"
               sx={{ color: "primary.main" }}
             >
-              Learn more
+              {t("link.text")}
             </Link>
           </Box>
         </Box>

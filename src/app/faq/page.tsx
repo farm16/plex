@@ -9,58 +9,51 @@ import {
   Paper,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useTranslations } from "next-intl";
 
 export default function FAQ() {
+  const t = useTranslations("components.faq");
+
   const faqs = [
     {
-      question: "What is Plex Marketing Solutions?",
-      answer:
-        "Plex Marketing Solutions is a leader in mobile marketing innovation, specializing in creating tailored, on-the-go brand experiences for modern businesses. We offer cutting-edge promotional vehicles and fully customized mobile marketing solutions.",
+      question: t("q1.question"),
+      answer: t("q1.answer"),
     },
     {
-      question: "Why is mobile marketing so effective?",
-      answer:
-        "Mobile marketing reaches your audience where they spend most of their time: on the go. By utilizing promotional vehicles and interactive brand experiences, we create memorable and engaging moments that drive results and brand loyalty.",
+      question: t("q2.question"),
+      answer: t("q2.answer"),
     },
     {
-      question: "What kind of vehicles do you offer?",
-      answer:
-        "We offer a range of custom promotional vehicles, from high-tech vans to fully equipped mobile showrooms, designed to fit your brand's specific needs and campaign goals.",
+      question: t("q3.question"),
+      answer: t("q3.answer"),
     },
     {
-      question: "Is mobile marketing rental a good option for my business?",
-      answer:
-        "Yes! Renting a mobile marketing vehicle with Plex is a cost-effective solution. It allows you to access high-quality, fully insured vehicles without the ongoing costs and responsibilities of ownership. You can focus on your campaign while we manage the logistics.",
+      question: t("q4.question"),
+      answer: t("q4.answer"),
     },
     {
-      question: "How do I rent a promotional vehicle?",
-      answer:
-        "Simply reach out to our team through the contact page, and we'll work with you to select the perfect vehicle for your needs, customize it for your brand, and set up a schedule for your campaign.",
+      question: t("q5.question"),
+      answer: t("q5.answer"),
     },
     {
-      question: "How much does renting a promotional vehicle cost?",
-      answer:
-        "The cost of renting a vehicle depends on the duration of the campaign, the type of vehicle, and any customizations required. Contact us for a tailored quote that meets your needs and budget.",
+      question: t("q6.question"),
+      answer: t("q6.answer"),
     },
     {
-      question: "Can I customize the inside of the vehicle?",
-      answer:
-        "No, currently we do not offer customization of the interior of the vehicle. However, we provide a range of vehicles with different features and layouts to suit your campaign needs.",
+      question: t("q7.question"),
+      answer: t("q7.answer"),
     },
     {
-      question: "How do I ensure the safety of my team and equipment?",
-      answer:
-        "Our vehicles are fully insured, reducing the risk to your business. In addition, we follow strict maintenance schedules and provide reliable support during your campaign to ensure everything runs smoothly.",
+      question: t("q8.question"),
+      answer: t("q8.answer"),
     },
     {
-      question: "Do you offer nationwide service?",
-      answer:
-        "No, we currently offer our services in select regions such as New York City. However, we are expanding our reach and may be able to accommodate your location. Contact us to discuss your needs and location.",
+      question: t("q9.question"),
+      answer: t("q9.answer"),
     },
     {
-      question: "How do I get started?",
-      answer:
-        "Getting started is simple. Reach out to our team through the contact page, and we'll walk you through the process, helping you select the right vehicle and customize your campaign. Let's make your marketing experience unforgettable!",
+      question: t("q10.question"),
+      answer: t("q10.answer"),
     },
   ];
 
@@ -69,17 +62,21 @@ export default function FAQ() {
       {/* Header Section */}
       <Box textAlign="center" sx={{ mb: 8 }}>
         <Typography variant="h2" gutterBottom sx={{ fontWeight: 700 }}>
-          Frequently Asked Questions
+          {t("heading")}
         </Typography>
         <Typography variant="h6" color="textSecondary">
-          Everything you need to know about Plex Marketing Solutions and our
-          mobile marketing services.
+          {t("subheading")}
         </Typography>
       </Box>
 
       {/* FAQ List */}
       <Grid container spacing={4}>
-        <Grid item xs={12} md={8}>
+        <Grid
+          size={{
+            xs: 12,
+            md: 8,
+          }}
+        >
           <Paper sx={{ p: 4, borderRadius: 2, boxShadow: 3 }}>
             {faqs.map((faq, index) => (
               <Accordion key={index} sx={{ mb: 2, borderRadius: 2 }}>
@@ -103,15 +100,18 @@ export default function FAQ() {
             ))}
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid
+          size={{
+            xs: 12,
+            md: 4,
+          }}
+        >
           <Box sx={{ mb: 6, paddingLeft: { xs: 0, md: 4 } }}>
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
-              More About Our Services
+              {t("sidebarTitle")}
             </Typography>
             <Typography variant="body2" color="textSecondary">
-              We specialize in creating impactful mobile marketing experiences
-              that bring your brand directly to your audience. Learn more about
-              our services and how we can help you engage customers on the go.
+              {t("sidebarText")}
             </Typography>
           </Box>
         </Grid>

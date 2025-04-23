@@ -1,0 +1,236 @@
+{
+  "components": {
+    "hero": {
+      "title": "快速、灵活的活动车辆解决方案",
+      "description": "简单、宽敞的移动办公车改装，帮助您随时随地做出最好的工作。",
+      "button": {
+        "text": "立即预定"
+      },
+      "link": {
+        "text": "了解更多"
+      }
+    },
+    "contactUs": {
+      "name": "姓名",
+      "email": "电子邮件",
+      "companyName": "公司名称",
+      "phone": "电话号码",
+      "descriptionPrompt": "您是哪种类型？",
+      "message": "留言",
+      "submit": "提交",
+      "loading": "加载中...",
+      "error": "出错了",
+      "success": "成功！",
+      "descriptions": {
+        "Remote worker": "远程工作者",
+        "Nonprofit": "非营利组织",
+        "Real estate agent": "房地产代理",
+        "Personal trainer": "私人教练",
+        "Legal service": "法律服务",
+        "General contractor": "总承包商",
+        "Financial services": "金融服务",
+        "Photographer": "摄影师",
+        "Interior designer": "室内设计师",
+        "Event planner": "活动策划师",
+        "B2B Sales & HR": "B2B销售与人力资源"
+      }
+    },
+    "footer": {
+      "companyTitle": "公司",
+      "aboutUs": "关于我们",
+      "services": "服务",
+      "faq": "常见问题",
+      "comingSoon": "即将推出",
+      "contactTitle": "联系我们",
+      "address": {
+        "line1": "235 Starr St.",
+        "line2": "Brooklyn, NY 11237"
+      },
+      "email": "电子邮件: info@plexvans.com",
+      "rights": "版权所有。"
+    },
+    "landingContactUs": {
+      "title": "随时工作",
+      "subtitle": "与我们的团队成员联系，了解更多关于我们移动办公车改装、流程和可用建造名额的信息。"
+    },
+    "mobileOfficeVanFeatures": {
+      "heading": "探索我们的车辆特点",
+      "subheading": "了解使我们的移动办公车成为完美的移动工作空间的特点。",
+      "features": {
+        "ergonomicWorkspace": {
+          "title": "人体工学工作空间",
+          "description": "为了舒适和效率而设计，确保最佳的工作效率。"
+        },
+        "highSpeedInternet": {
+          "title": "高速互联网",
+          "description": "通过可靠的高速互联网保持连接。"
+        },
+        "powerSupply": {
+          "title": "电力供应",
+          "description": "配备太阳能电池板和备用发电机，确保不间断电力供应。"
+        },
+        "comfortableSeating": {
+          "title": "舒适座椅",
+          "description": "为长时间路途提供的宽敞座椅设计。"
+        },
+        "storageSolutions": {
+          "title": "存储解决方案",
+          "description": "提供充足的存储空间，方便存放办公用品和设备。"
+        },
+        "climateControl": {
+          "title": "气候控制",
+          "description": "通过高效的加热和制冷系统保持完美的温度。"
+        }
+      }
+    },
+    "whyChooseUs": {
+      "heading": "为什么选择我们的移动办公车？",
+      "subheading": "选择Plex Vans，享受一系列让您的业务更加高效、可接触且环保的好处。",
+      "features": {
+        "avoidParkingViolations": {
+          "title": "避免停车违规",
+          "description": "我们的移动办公车设计符合当地法规，帮助您避免昂贵的停车罚单和罚款。"
+        },
+        "fullyInsuredVehicle": {
+          "title": "全险车辆",
+          "description": "全面的保险保障通过减少风险来保护您的业务，让您每次出行都更加放心。"
+        },
+        "increasedMobility": {
+          "title": "提升流动性",
+          "description": "通过将服务直接带到高流量地区或服务不足的地方，接触更多客户。"
+        },
+        "realTimeTracking": {
+          "title": "实时车辆位置追踪",
+          "description": "实时监控车辆位置，优化路线规划，减少燃料成本，提升服务效率。保持客户知情，改善业务物流管理。"
+        },
+        "costEffective": {
+          "title": "高性价比解决方案",
+          "description": "消除了对传统实体店面的需求，同时保持高水平的服务和可接触性。"
+        },
+        "convenienceOnTheGo": {
+          "title": "便捷移动办公",
+          "description": "我们的车辆提供一个完全配备的灵活工作空间，让您可以直接将服务带到客户面前。"
+        },
+        "ecoFriendly": {
+          "title": "环保设计",
+          "description": "我们的车辆配备可持续发展的功能，减少您的环境足迹，同时提供顶级服务。"
+        },
+        "customizableInteriors": {
+          "title": "可定制内部",
+          "description": "根据您的业务需求定制车内空间，确保功能性和专业性。"
+        }
+      }
+    },
+    "responsiveAppBar": {
+      "pages": {
+        "about": "关于我们",
+        "services": "服务",
+        "faq": "常见问题"
+      },
+      "bookNow": "立即预订"
+    },
+    "faq": {
+      "heading": "常见问题",
+      "subheading": "了解有关Plex营销解决方案和我们移动营销服务的所有信息。",
+      "sidebarTitle": "更多信息",
+      "sidebarText": "在这里，您将找到有关我们服务的更多详细信息。",
+      "q1": {
+        "question": "什么是Plex营销解决方案？",
+        "answer": "Plex营销解决方案是移动营销创新的领导者，专注于为现代企业打造量身定制的移动品牌体验。"
+      },
+      "q2": {
+        "question": "为什么移动营销如此有效？",
+        "answer": "移动营销可以在您的受众最常待的地方接触到他们：在路上。通过利用促销车辆和互动品牌体验，我们创造了令人难忘且具有吸引力的时刻，从而推动成果和品牌忠诚度。"
+      },
+      "q3": {
+        "question": "你们提供什么类型的车辆？",
+        "answer": "我们提供一系列定制的促销车辆，从高科技货车到完全装备的移动展厅，旨在满足您的品牌特定需求和活动目标。"
+      },
+      "q4": {
+        "question": "租赁移动营销车辆对我的企业来说是一个好的选择吗？",
+        "answer": "是的！通过Plex租赁移动营销车辆是一种具有成本效益的解决方案。它允许您使用高质量、全险的车辆，而无需承担拥有车辆的长期费用和责任。"
+      },
+      "q5": {
+        "question": "如何租赁促销车辆？",
+        "answer": "只需通过联系我们的团队，我们将帮助您选择适合您需求的完美车辆，为您的品牌定制并安排活动的时间表。"
+      },
+      "q6": {
+        "question": "租赁促销车辆的费用是多少？",
+        "answer": "租赁费用取决于活动的持续时间、车辆类型以及任何需要的定制服务。"
+      },
+      "q7": {
+        "question": "我可以定制车辆的内部吗？",
+        "answer": "目前我们不提供车辆内部定制服务。不过，我们提供多种不同功能和布局的车辆，以满足您的活动需求。"
+      },
+      "q8": {
+        "question": "如何确保我团队和设备的安全？",
+        "answer": "我们的车辆已全面投保，降低了您业务的风险。此外，我们还遵循严格的维护计划，确保您的活动顺利进行。"
+      },
+      "q9": {
+        "question": "你们提供全国服务吗？",
+        "answer": "目前，我们仅在纽约市等特定地区提供服务。不过，我们正在扩展业务，可能会覆盖更多地区。"
+      },
+      "q10": {
+        "question": "如何开始？",
+        "answer": "开始非常简单。通过联系我们的团队，我们将指导您完成整个流程，帮助您选择合适的车辆并定制您的活动。"
+      }
+    },
+    "contactUsPage": {
+      "title": "准备好上路了吗？",
+      "subtitle": "与我们的团队成员联系，了解更多关于我们移动办公车改装、流程和可用建造名额的信息。",
+      "emailPrompt": "通过电子邮件联系我们：",
+      "email": "info@plexvans.com",
+      "alert": "请注意，我们无法为美国以外的居民提供移动办公车改装服务。"
+    },
+    "about": {
+      "header": {
+        "title": "推动您的品牌向前",
+        "subtitle": "为现代品牌提供全面的移动营销解决方案"
+      },
+      "intro": {
+        "imageAlt": "移动办公室厢车",
+        "text": "在今天快速发展的数字环境中，吸引注意力需要的不仅仅是传统策略。您的观众总是在移动——这就是Plex营销解决方案的优势所在。我们专注于打造量身定制的移动营销体验，无论客户在哪里、何时准备互动，我们都能与他们连接。通过Plex，您的品牌与观众一起前行，留下重要的印象。"
+      },
+      "whyMobileMarketing": {
+        "title": "为什么选择移动营销？",
+        "text": "如今的消费者越来越依赖移动设备并保持连接，因此品牌需要在他们生活的地方与他们接触——随时随地。Plex营销的移动体验不仅仅是展示产品；它们创造了互动的、令人难忘的旅程，吸引并打动观众。通过我们的服务，每一次停留都成为一个宝贵的连接点。"
+      },
+      "ourSolution": {
+        "title": "我们的完整解决方案",
+        "text": "Plex Marketing在移动营销创新方面处于领先地位，提供从最先进的促销车辆到完全定制的品牌体验等一切服务。我们将您的营销愿景付诸实践，在每一步旅程中与客户连接，提升您的品牌。"
+      },
+      "rentingBenefits": {
+        "title": "为什么租赁而非购买？",
+        "text": "与Plex Marketing合作租赁提供了一种具有成本效益的解决方案，可以最大化影响力，同时避免所有所有权的麻烦。避免保险、维护和修理成本，同时专注于真正重要的事情：吸引您的观众并发展您的品牌。让我们处理后勤工作，您只需专注于实现成果。"
+      },
+      "ctaButton": "联系我们的团队"
+    },
+    "services": {
+      "header": {
+        "title": "我们的租赁服务",
+        "subtitle": "根据您的促销需求选择灵活的租赁选项，无论是一天、一周还是一个月。"
+      },
+      "ctaButton": "立即预订",
+      "customRentalInquiry": {
+        "title": "需要更多灵活性？",
+        "text": "联系我们，了解定制租赁选项，适用于延长的活动或特定需求。",
+        "button": "联系我们"
+      },
+      "rentalOptions": {
+        "dailyRental": {
+          "title": "日租",
+          "price": "$385",
+          "duration": "天",
+          "description": "一个方便的解决方案，用于短期活动或特别的一天促销，确保在没有长期承诺的情况下最大化品牌曝光。"
+        },
+        "monthlyRental": {
+          "title": "月租",
+          "price": "$350",
+          "duration": "月",
+          "warning": "最低要求3个月",
+          "description": "适用于持续、具有影响力的营销工作，使您的品牌能够在一个月内保持连续曝光，打造持久印象。"
+        }
+      }
+    }
+  }
+}

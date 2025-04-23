@@ -1,7 +1,10 @@
 import { Box, Paper, Typography } from "@mui/material";
 import { ContactUsForm } from "./contactUsForm";
+import { useTranslations } from "next-intl";
 
 export const LandingContactUsForm = () => {
+  const t = useTranslations("components.landingContactUs");
+
   return (
     <Box
       sx={{
@@ -22,11 +25,10 @@ export const LandingContactUsForm = () => {
         bgcolor="white"
       >
         <Typography variant="h4" fontWeight={400} color="#000000" p={4} pb={1}>
-          Work, anywhere
+          {t("title")}
         </Typography>
         <Typography variant="body1" color="textSecondary" px={4} pb={1}>
-          Connect with a member of our team to learn more about our mobile
-          office van conversions, process, and available build spots.
+          {t("subtitle")}
         </Typography>
         <Paper sx={{ p: 4, pt: 2 }}>
           <ContactUsForm />
