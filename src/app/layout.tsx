@@ -7,6 +7,7 @@ import ResponsiveAppBar from "@/components/appBar";
 import Footer from "@/components/footer";
 import { getLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { Analytics } from "@vercel/analytics/next";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -60,6 +61,7 @@ export default async function RootLayout({
               <CssBaseline />
               <ResponsiveAppBar />
               {children}
+              <Analytics />
               <Footer />
             </ThemeProvider>
           </AppRouterCacheProvider>
