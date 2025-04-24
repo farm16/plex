@@ -129,8 +129,25 @@ function ResponsiveAppBar() {
                         router.push(path);
                         handleCloseNavMenu();
                       }}
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        justifyItems: "center",
+                        backgroundColor: "rgba(236, 236, 236, 0.4)",
+                        borderBottom:
+                          pathname === path ? "1px solid rgb(97, 97, 97)" : "",
+                        padding: "10px",
+                        margin: "0",
+                      }}
                     >
-                      <Typography sx={{ textAlign: "center" }}>
+                      <Typography
+                        sx={{
+                          textAlign: "center",
+                          fontSize: "1rem",
+                          fontWeight: pathname === path ? "700" : "",
+                        }}
+                      >
                         {label}
                       </Typography>
                     </ListItemButton>
