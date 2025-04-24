@@ -1,6 +1,6 @@
 "use client";
 
-import React, { MouseEvent, useState, useTransition } from "react";
+import React, { MouseEvent, useState } from "react";
 import {
   AppBar,
   Box,
@@ -14,17 +14,12 @@ import {
   ListItem,
   ListItemButton,
   FormControl,
-  Select,
-  MenuItem,
-  SelectChangeEvent,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
-import { ES, US, CN } from "country-flag-icons/react/3x2";
-import { setUserLocale } from "@/services/locale";
-import { Locale } from "../../i18n/config";
+import { useTranslations } from "next-intl";
+import SwitchLocale from "./switchLocale";
 
 function ResponsiveAppBar() {
   const t = useTranslations("components.responsiveAppBar");
@@ -49,7 +44,6 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const router = useRouter();
   const pathname = usePathname();
-  const [, startTransition] = useTransition();
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -57,16 +51,6 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const locale = useLocale() as Locale;
-
-  const handleChange = (event: SelectChangeEvent<Locale>) => {
-    const nextLocale = event.target.value as Locale;
-    console.log("locale", nextLocale);
-    startTransition(() => {
-      setUserLocale(nextLocale);
-    });
   };
 
   return (
@@ -112,27 +96,7 @@ function ResponsiveAppBar() {
                 justifyContent: "flex-end",
               }}
             >
-              <Select
-                style={{
-                  borderRadius: "20px",
-                  width: "80px",
-                  // height: "40px",
-                  marginRight: "20px",
-                  height: "40px",
-                }}
-                value={locale}
-                onChange={handleChange}
-              >
-                <MenuItem value="en-US">
-                  <US title="en-US" />
-                </MenuItem>
-                <MenuItem value="es-US">
-                  <ES title="es-US" />
-                </MenuItem>
-                <MenuItem value="zh-CN">
-                  <CN title="zh-CN" />
-                </MenuItem>
-              </Select>
+              <SwitchLocale />
             </FormControl>
             <Button
               variant="contained"
@@ -175,26 +139,7 @@ function ResponsiveAppBar() {
               </List>
               <List>
                 <ListItem style={{ display: "flex", justifyContent: "center" }}>
-                  <Select
-                    style={{
-                      borderRadius: "20px",
-                      width: "80px",
-                      marginRight: "20px",
-                      height: "40px",
-                    }}
-                    value={locale}
-                    onChange={handleChange}
-                  >
-                    <MenuItem value="en">
-                      <US title="en" />
-                    </MenuItem>
-                    <MenuItem value="es">
-                      <ES title="es" />
-                    </MenuItem>
-                    <MenuItem value="zh-CN">
-                      <CN title="zh-CN" />
-                    </MenuItem>
-                  </Select>
+                  <SwitchLocale />
                   <Button
                     onClick={() => {
                       router.push("/contact-us");
