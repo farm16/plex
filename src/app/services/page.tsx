@@ -23,7 +23,9 @@ export default function Services() {
       title: t("rentalOptions.dailyRental.title"),
       price: t("rentalOptions.dailyRental.price"),
       duration: t("rentalOptions.dailyRental.duration"),
+      warning: "",
       description: t("rentalOptions.dailyRental.description"),
+      descriptionWarning: t("rentalOptions.dailyRental.descriptionWarning"),
     },
     {
       title: t("rentalOptions.monthlyRental.title"),
@@ -31,8 +33,9 @@ export default function Services() {
       duration: t("rentalOptions.monthlyRental.duration"),
       warning: t("rentalOptions.monthlyRental.warning"),
       description: t("rentalOptions.monthlyRental.description"),
+      descriptionWarning: "",
     },
-  ];
+  ] as const;
 
   return (
     <Container maxWidth="md" sx={{ mt: 5, mb: 10 }}>
@@ -107,7 +110,19 @@ export default function Services() {
                 >
                   {option.description}
                 </Typography>
+
+                {option.descriptionWarning && (
+                  <Typography
+                    style={{
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                    }}
+                  >
+                    * {option.descriptionWarning}
+                  </Typography>
+                )}
               </CardContent>
+
               <Button
                 variant="contained"
                 color="primary"

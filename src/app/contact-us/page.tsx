@@ -30,11 +30,15 @@ export default function ContactUs() {
               {t("subtitle")}
             </Typography>
 
-            <Typography fontWeight={500} variant="body1">
-              {t("emailPrompt")}
-            </Typography>
+            <Typography variant="body1">{t("emailPrompt")}</Typography>
             <Typography variant="body1">
               <Link href="mailto:info@plexvans.com">{t("email")}</Link>
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2 }}>
+              {t("phonePrompt")}
+            </Typography>
+            <Typography variant="body1">
+              <Link href={t("phoneHref")}>{t("phone")}</Link>
             </Typography>
             <Alert
               icon={<AlertIcon fontSize="inherit" />}

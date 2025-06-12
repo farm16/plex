@@ -83,14 +83,19 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               {t("contactTitle")}
             </Typography>
-            <Typography variant="body2" gutterBottom>
-              {t("address.line1")}
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              {t("address.line2")}
-            </Typography>
+
             <Typography variant="body2" gutterBottom>
               {t("email")}
+              <a href={t("emailHref")} style={{ color: "inherit" }}>
+                {t("emailValue")}
+              </a>
+            </Typography>
+
+            <Typography variant="body2" gutterBottom>
+              {t("phone")}
+              <a href={t("phoneHref")} style={{ color: "inherit" }}>
+                {t("phoneValue")}
+              </a>
             </Typography>
           </Grid>
         </Grid>

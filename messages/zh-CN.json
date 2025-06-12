@@ -46,7 +46,12 @@
         "line1": "235 Starr St.",
         "line2": "Brooklyn, NY 11237"
       },
-      "email": "电子邮件: info@plexvans.com",
+      "email": "电子邮件: ",
+      "emailValue": "info@plexvans.com",
+      "emailHref": "mailto: info@plexvans.com",
+      "phone": "电话: ",
+      "phoneValue": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "rights": "版权所有。"
     },
     "landingContactUs": {
@@ -180,6 +185,9 @@
       "subtitle": "与我们的团队成员联系，了解更多关于我们移动办公车改装、流程和可用建造名额的信息。",
       "emailPrompt": "通过电子邮件联系我们：",
       "email": "info@plexvans.com",
+      "phonePrompt": "或拨打电话联系我们：",
+      "phone": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "alert": "请注意，我们无法为美国以外的居民提供移动办公车改装服务。"
     },
     "about": {
@@ -219,9 +227,10 @@
       "rentalOptions": {
         "dailyRental": {
           "title": "日租",
-          "price": "$385",
+          "price": "$300",
           "duration": "天",
-          "description": "一个方便的解决方案，用于短期活动或特别的一天促销，确保在没有长期承诺的情况下最大化品牌曝光。"
+          "description": "一个方便的解决方案，用于短期活动或特别的一天促销，确保在没有长期承诺的情况下最大化品牌曝光。",
+          "descriptionWarning": "请联系我们的营销代表，了解最适合您需求的套餐。"
         },
         "monthlyRental": {
           "title": "月租",

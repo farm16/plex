@@ -46,7 +46,12 @@
         "line1": "235 Starr St.",
         "line2": "Brooklyn, NY 11237"
       },
-      "email": "Correo electrónico: info@plexvans.com",
+      "email": "Correo electrónico: ",
+      "emailValue": "info@plexvans.com",
+      "emailHref": "mailto: info@plexvans.com",
+      "phone": "Teléfono: ",
+      "phoneValue": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "rights": "Todos los derechos reservados."
     },
     "landingContactUs": {
@@ -180,6 +185,9 @@
       "subtitle": "Conéctate con un miembro de nuestro equipo para aprender más sobre nuestras conversiones de vans de oficina móvil, proceso y espacios de construcción disponibles.",
       "emailPrompt": "Escríbenos a:",
       "email": "info@plexvans.com",
+      "phonePrompt": "O llámanos al:",
+      "phone": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "alert": "Ten en cuenta que no ofrecemos conversiones de oficina móvil para residentes fuera de los Estados Unidos."
     },
     "about": {
@@ -219,9 +227,10 @@
       "rentalOptions": {
         "dailyRental": {
           "title": "Alquiler Diario",
-          "price": "$385",
+          "price": "$300",
           "duration": "día",
-          "description": "Una solución conveniente para eventos de corto plazo o promociones de un solo día, asegurando la máxima exposición de la marca sin compromiso a largo plazo."
+          "description": "Una solución conveniente para eventos de corto plazo o promociones de un solo día, asegurando la máxima exposición de la marca sin compromiso a largo plazo.",
+          "descriptionWarning": "Por favor, contacta a nuestro representante de marketing para ver qué paquetes se adaptan mejor a tus necesidades."
         },
         "monthlyRental": {
           "title": "Alquiler Mensual",

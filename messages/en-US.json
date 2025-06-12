@@ -46,7 +46,12 @@
         "line1": "235 Starr St.",
         "line2": "Brooklyn, NY 11237"
       },
-      "email": "Email: info@plexvans.com",
+      "email": "Email: ",
+      "emailValue": "info@plexvans.com",
+      "emailHref": "mailto: info@plexvans.com",
+      "phone": "Phone: ",
+      "phoneValue": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "rights": "All rights reserved."
     },
     "landingContactUs": {
@@ -180,6 +185,9 @@
       "subtitle": "Connect with a member of our team to learn more about our mobile office van conversions, process, and available build spots.",
       "emailPrompt": "Email us at:",
       "email": "info@plexvans.com",
+      "phonePrompt": "Call us at:",
+      "phone": "+1 (347) 927-7869",
+      "phoneHref": "tel:+13479277869",
       "alert": "Please note that we are not able to offer mobile office conversions for residents outside of the United States."
     },
     "about": {
@@ -219,9 +227,10 @@
       "rentalOptions": {
         "dailyRental": {
           "title": "Daily Rental",
-          "price": "$385",
+          "price": "$300",
           "duration": "day",
-          "description": "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment."
+          "description": "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment.",
+          "descriptionWarning": "Please contact our marketing rep to see what packages best fits your needs."
         },
         "monthlyRental": {
           "title": "Monthly Rental",

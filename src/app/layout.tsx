@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import { getLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Analytics } from "@vercel/analytics/next";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -62,6 +63,7 @@ export default async function RootLayout({
               <ResponsiveAppBar />
               {children}
               <Analytics />
+              <FloatingWhatsApp />
               <Footer />
             </ThemeProvider>
           </AppRouterCacheProvider>
