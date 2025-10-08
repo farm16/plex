@@ -227,7 +227,7 @@
       "rentalOptions": {
         "dailyRental": {
           "title": "Alquiler Diario",
-          "price": "$300",
+          "price": "$400",
           "duration": "día",
           "description": "Una solución conveniente para eventos de corto plazo o promociones de un solo día, asegurando la máxima exposición de la marca sin compromiso a largo plazo.",
           "descriptionWarning": "Por favor, contacta a nuestro representante de marketing para ver qué paquetes se adaptan mejor a tus necesidades."
