@@ -227,7 +227,7 @@
       "rentalOptions": {
         "dailyRental": {
           "title": "Daily Rental",
-          "price": "$300",
+          "price": "$400",
           "duration": "day",
           "description": "A convenient solution for short-term events or special one-day promotions, ensuring maximum brand exposure without long-term commitment.",
           "descriptionWarning": "Please contact our marketing rep to see what packages best fits your needs."
